@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.173 ns
+From           : gestion_anemo:vitesse_vent|valeur_calcule[5]
+To             : data_anemometre[5]
+From Clock     : in_freq_anemometre
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'in_freq_anemometre'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 127.31 MHz ( period = 7.855 ns )
+From           : gestion_anemo:vitesse_vent|valeur_precedent[0]
+To             : gestion_anemo:vitesse_vent|valeur_calcule[25]
+From Clock     : in_freq_anemometre
+To Clock       : in_freq_anemometre
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_50M'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 253.49 MHz ( period = 3.945 ns )
+From           : gestion_anemo:vitesse_vent|valeur_present[5]
+To             : gestion_anemo:vitesse_vent|valeur_present[21]
+From Clock     : clk_50M
+To Clock       : clk_50M
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
