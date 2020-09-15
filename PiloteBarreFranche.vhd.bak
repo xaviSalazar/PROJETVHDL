@@ -9,7 +9,7 @@ port (
 --entrees 
 clk_50M 			: in std_logic; -- horloge
 raz_n           	: in std_logic;	-- reset
-in_freq_anemometre  : in std_logic -- freq du vent
+in_freq_anemometre  : in std_logic; -- freq du vent
 
 data_anemometre		: out std_logic_vector (25 downto 0) -- valeur anemo
 );

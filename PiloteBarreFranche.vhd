@@ -11,7 +11,7 @@ clk_50M 			: in std_logic; -- horloge
 raz_n           	: in std_logic;	-- reset
 in_freq_anemometre  : in std_logic; -- freq du vent
 
-data_anemometre		: out std_logic_vector (25 downto 0) -- valeur anemo
+data_anemometre		: out std_logic_vector (7 downto 0) -- valeur anemo
 );
 
 end PiloteBarreFranche;
@@ -29,7 +29,7 @@ continu				: in std_logic;	-- mode de fonctionnement
 start_stop			: in std_logic; -- start/stop
 --sorties
 data_valid			: out std_logic; -- validation donnee
-data_anemometre		: out std_logic_vector (25 downto 0) -- valeur anemo
+data_anemometre		: out std_logic_vector (7 downto 0) -- valeur anemo
 
 );
 end component gestion_anemo;

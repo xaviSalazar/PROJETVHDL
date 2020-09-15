@@ -15,7 +15,7 @@ continu				: in std_logic;	-- mode de fonctionnement
 start_stop			: in std_logic; -- start/stop
 --sorties
 data_valid			: out std_logic; -- validation donnee
-data_anemometre		: out std_logic_vector (25 downto 0) -- valeur anemo
+data_anemometre		: out std_logic_vector (7 downto 0) -- valeur anemo
 
 );
 
@@ -25,6 +25,7 @@ architecture behv of gestion_anemo is
 signal valeur_present   : std_logic_vector (25 downto 0):=(others => '0');
 signal valeur_precedent : std_logic_vector (25 downto 0):=(others => '0');
 signal valeur_calcule : std_logic_vector (25 downto 0);
+signal iValeurCalcule, iDataAnemometre : integer;
 BEGIN
 -- process pour comptage avec horloge de 50M
 process (clk_50M)
@@ -50,8 +51,9 @@ begin
         valeur_precedent <= valeur_present;
      end if;
 end process;
-
-data_anemometre <= (valeur_calcule);  --(X"2FAF080") / 
+iValeurCalcule <= to_integer(unsigned(valeur_calcule));
+iDataAnemometre <= 50000000 / iValeurCalcule ;
+data_anemometre <= std_logic_vector(to_unsigned(iDataAnemometre, data_anemometre'length));
 
 END behv;
 
