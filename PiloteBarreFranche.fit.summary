@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Sep 15 11:57:17 2020
+Fitter Status : Successful - Fri Sep 25 11:56:25 2020
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
 Revision Name : PiloteBarreFranche
 Top-level Entity Name : PiloteBarreFranche
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 1,257 / 33,216 ( 4 % )
-    Total combinational functions : 1,257 / 33,216 ( 4 % )
-    Dedicated logic registers : 78 / 33,216 ( < 1 % )
-Total registers : 78
-Total pins : 11 / 475 ( 2 % )
+Total logic elements : 1,198 / 33,216 ( 4 % )
+    Total combinational functions : 1,198 / 33,216 ( 4 % )
+    Dedicated logic registers : 124 / 33,216 ( < 1 % )
+Total registers : 124
+Total pins : 33 / 475 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

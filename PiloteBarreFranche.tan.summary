@@ -5,8 +5,8 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 141.921 ns
-From           : gestion_anemo:vitesse_vent|valeur_calcule[25]
+Actual Time    : 108.992 ns
+From           : gestion_anemo:vitesse_vent|valeur_calcule[18]
 To             : data_anemometre[0]
 From Clock     : in_freq_anemometre
 To Clock       : --
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'in_freq_anemometre'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 128.17 MHz ( period = 7.802 ns )
+Actual Time    : 129.27 MHz ( period = 7.736 ns )
 From           : gestion_anemo:vitesse_vent|valeur_precedent[0]
 To             : gestion_anemo:vitesse_vent|valeur_calcule[25]
 From Clock     : in_freq_anemometre
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk_50M'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 249.19 MHz ( period = 4.013 ns )
-From           : gestion_anemo:vitesse_vent|valeur_present[18]
-To             : gestion_anemo:vitesse_vent|valeur_present[23]
+Actual Time    : 225.53 MHz ( period = 4.434 ns )
+From           : gestion_anemo:vitesse_vent|count_1Hz[0]
+To             : gestion_anemo:vitesse_vent|count_1Hz[21]
 From Clock     : clk_50M
 To Clock       : clk_50M
 Failed Paths   : 0
