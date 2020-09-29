@@ -87,3 +87,8 @@ set_location_assignment PIN_AC22 -to data_anemometre[3]
 set_location_assignment PIN_AB21 -to data_anemometre[2]
 set_location_assignment PIN_AF23 -to data_anemometre[1]
 set_location_assignment PIN_AE23 -to data_anemometre[0]
+set_location_assignment PIN_N25 -to continu
+set_location_assignment PIN_N26 -to start_stop
+set_location_assignment PIN_AE12 -to leds[0]
+set_location_assignment PIN_AD12 -to leds[1]
+set_location_assignment PIN_AE22 -to data_valid

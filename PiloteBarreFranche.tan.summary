@@ -2,34 +2,64 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.752 ns
+From           : continu
+To             : gestion_anemo:vitesse_vent|s_data_anemo[9]
+From Clock     : --
+To Clock       : clk_50M
+Failed Paths   : 0
+
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 108.992 ns
-From           : gestion_anemo:vitesse_vent|valeur_calcule[18]
-To             : data_anemometre[0]
-From Clock     : in_freq_anemometre
+Actual Time    : 11.314 ns
+From           : gestion_anemo:vitesse_vent|unite[1]
+To             : AffUnite[3]
+From Clock     : clk_50M
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Clock Setup: 'in_freq_anemometre'
+Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 129.27 MHz ( period = 7.736 ns )
-From           : gestion_anemo:vitesse_vent|valeur_precedent[0]
-To             : gestion_anemo:vitesse_vent|valeur_calcule[25]
-From Clock     : in_freq_anemometre
-To Clock       : in_freq_anemometre
+Actual Time    : 7.836 ns
+From           : continu
+To             : data_valid
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.179 ns
+From           : start_stop
+To             : gestion_anemo:vitesse_vent|s_leds[1]
+From Clock     : --
+To Clock       : clk_50M
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk_50M'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 225.53 MHz ( period = 4.434 ns )
-From           : gestion_anemo:vitesse_vent|count_1Hz[0]
-To             : gestion_anemo:vitesse_vent|count_1Hz[21]
+Actual Time    : 82.09 MHz ( period = 12.182 ns )
+From           : gestion_anemo:vitesse_vent|s_data_anemometre[5]
+To             : gestion_anemo:vitesse_vent|unite[7]
 From Clock     : clk_50M
 To Clock       : clk_50M
+Failed Paths   : 0
+
+Type           : Clock Setup: 'in_freq_anemometre'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 130.74 MHz ( period = 7.649 ns )
+From           : gestion_anemo:vitesse_vent|valeur_precedent[0]
+To             : gestion_anemo:vitesse_vent|valeur_calcule[25]
+From Clock     : in_freq_anemometre
+To Clock       : in_freq_anemometre
 Failed Paths   : 0
 
 Type           : Total number of failed paths

@@ -1,5 +1,5 @@
 Fitter report for PiloteBarreFranche
-Fri Sep 25 11:56:25 2020
+Tue Sep 29 11:21:58 2020
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -61,18 +61,18 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +------------------------------------+----------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 25 11:56:25 2020        ;
+; Fitter Status                      ; Successful - Tue Sep 29 11:21:58 2020        ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                      ; PiloteBarreFranche                           ;
 ; Top-level Entity Name              ; PiloteBarreFranche                           ;
 ; Family                             ; Cyclone II                                   ;
 ; Device                             ; EP2C35F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
-; Total logic elements               ; 1,198 / 33,216 ( 4 % )                       ;
-;     Total combinational functions  ; 1,198 / 33,216 ( 4 % )                       ;
-;     Dedicated logic registers      ; 124 / 33,216 ( < 1 % )                       ;
-; Total registers                    ; 124                                          ;
-; Total pins                         ; 33 / 475 ( 7 % )                             ;
+; Total logic elements               ; 1,226 / 33,216 ( 4 % )                       ;
+;     Total combinational functions  ; 1,226 / 33,216 ( 4 % )                       ;
+;     Dedicated logic registers      ; 159 / 33,216 ( < 1 % )                       ;
+; Total registers                    ; 159                                          ;
+; Total pins                         ; 38 / 475 ( 8 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                               ;
@@ -148,8 +148,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                    ; Value               ;
 +-------------------------+---------------------+
 ; Placement               ;                     ;
-;     -- Requested        ; 0 / 1355 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 1355 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 1423 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 1423 ( 0.00 % ) ;
 ;                         ;                     ;
 ; Routing (by Connection) ;                     ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )    ;
@@ -171,7 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 1355    ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 1423    ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -186,30 +186,30 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Total logic elements                        ; 1,198 / 33,216 ( 4 % )                  ;
-;     -- Combinational with no register       ; 1074                                    ;
+; Total logic elements                        ; 1,226 / 33,216 ( 4 % )                  ;
+;     -- Combinational with no register       ; 1067                                    ;
 ;     -- Register only                        ; 0                                       ;
-;     -- Combinational with a register        ; 124                                     ;
+;     -- Combinational with a register        ; 159                                     ;
 ;                                             ;                                         ;
 ; Logic element usage by number of LUT inputs ;                                         ;
-;     -- 4 input functions                    ; 408                                     ;
-;     -- 3 input functions                    ; 514                                     ;
-;     -- <=2 input functions                  ; 276                                     ;
+;     -- 4 input functions                    ; 424                                     ;
+;     -- 3 input functions                    ; 497                                     ;
+;     -- <=2 input functions                  ; 305                                     ;
 ;     -- Register only                        ; 0                                       ;
 ;                                             ;                                         ;
 ; Logic elements by mode                      ;                                         ;
-;     -- normal mode                          ; 667                                     ;
+;     -- normal mode                          ; 695                                     ;
 ;     -- arithmetic mode                      ; 531                                     ;
 ;                                             ;                                         ;
-; Total registers*                            ; 124 / 34,593 ( < 1 % )                  ;
-;     -- Dedicated logic registers            ; 124 / 33,216 ( < 1 % )                  ;
+; Total registers*                            ; 159 / 34,593 ( < 1 % )                  ;
+;     -- Dedicated logic registers            ; 159 / 33,216 ( < 1 % )                  ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )                       ;
 ;                                             ;                                         ;
-; Total LABs:  partially or completely used   ; 91 / 2,076 ( 4 % )                      ;
+; Total LABs:  partially or completely used   ; 88 / 2,076 ( 4 % )                      ;
 ; User inserted logic elements                ; 0                                       ;
 ; Virtual pins                                ; 0                                       ;
-; I/O pins                                    ; 33 / 475 ( 7 % )                        ;
-;     -- Clock pins                           ; 1 / 8 ( 13 % )                          ;
+; I/O pins                                    ; 38 / 475 ( 8 % )                        ;
+;     -- Clock pins                           ; 2 / 8 ( 25 % )                          ;
 ; Global signals                              ; 1                                       ;
 ; M4Ks                                        ; 0 / 105 ( 0 % )                         ;
 ; Total block memory bits                     ; 0 / 483,840 ( 0 % )                     ;
@@ -221,13 +221,13 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )                           ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )                           ;
 ; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%                            ;
-; Peak interconnect usage (total/H/V)         ; 4% / 4% / 5%                            ;
+; Peak interconnect usage (total/H/V)         ; 12% / 10% / 15%                         ;
 ; Maximum fan-out node                        ; clk_50M~clkctrl                         ;
-; Maximum fan-out                             ; 72                                      ;
+; Maximum fan-out                             ; 107                                     ;
 ; Highest non-global fan-out signal           ; gestion_anemo:vitesse_vent|LessThan0~50 ;
 ; Highest non-global fan-out                  ; 53                                      ;
-; Total fan-out                               ; 3963                                    ;
-; Average fan-out                             ; 2.92                                    ;
+; Total fan-out                               ; 4141                                    ;
+; Average fan-out                             ; 2.90                                    ;
 +---------------------------------------------+-----------------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -239,8 +239,10 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; Name               ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; clk_50M            ; N2    ; 2        ; 0            ; 18           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; continu            ; N25   ; 5        ; 65           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; in_freq_anemometre ; J22   ; 5        ; 65           ; 31           ; 2           ; 52                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; raz_n              ; E18   ; 4        ; 50           ; 36           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; start_stop         ; N26   ; 5        ; 65           ; 19           ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +--------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -270,7 +272,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AffUnite[4]        ; AE11  ; 8        ; 27           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; AffUnite[5]        ; V14   ; 8        ; 27           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; AffUnite[6]        ; V13   ; 8        ; 27           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; clk_1Hz            ; AC14  ; 7        ; 35           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; clk_1Hz            ; AA13  ; 7        ; 35           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 ; data_anemometre[0] ; AE23  ; 7        ; 63           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; data_anemometre[1] ; AF23  ; 7        ; 63           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; data_anemometre[2] ; AB21  ; 7        ; 63           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
@@ -279,6 +281,9 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; data_anemometre[5] ; AD23  ; 7        ; 61           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; data_anemometre[6] ; AD21  ; 7        ; 61           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; data_anemometre[7] ; AC21  ; 7        ; 61           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; data_valid         ; AE22  ; 7        ; 59           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; leds[0]            ; AE12  ; 8        ; 31           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; leds[1]            ; AD12  ; 8        ; 31           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 +--------------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
@@ -291,10 +296,10 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; 2        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
 ; 3        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 ; 4        ; 1 / 58 ( 2 % )   ; 3.3V          ; --           ;
-; 5        ; 1 / 65 ( 2 % )   ; 3.3V          ; --           ;
+; 5        ; 3 / 65 ( 5 % )   ; 3.3V          ; --           ;
 ; 6        ; 15 / 59 ( 25 % ) ; 3.3V          ; --           ;
-; 7        ; 9 / 58 ( 16 % )  ; 3.3V          ; --           ;
-; 8        ; 7 / 56 ( 13 % )  ; 3.3V          ; --           ;
+; 7        ; 10 / 58 ( 17 % ) ; 3.3V          ; --           ;
+; 8        ; 9 / 56 ( 16 % )  ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -339,7 +344,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AA10     ; 153        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 155        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA12     ; 179        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA13     ; 192        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA13     ; 192        ; 7        ; clk_1Hz                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA14     ; 194        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA15     ; 197        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA16     ; 209        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -392,7 +397,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AC11     ; 168        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC12     ; 172        ; 8        ; AffUnite[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AC13     ; 185        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AC14     ; 191        ; 7        ; clk_1Hz                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC14     ; 191        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC15     ; 199        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC16     ; 202        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC17     ; 207        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -416,7 +421,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AD9      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD10     ; 167        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD11     ; 173        ; 8        ; AffUnite[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; AD12     ; 181        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD12     ; 181        ; 8        ; leds[1]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD13     ; 186        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AD14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD15     ; 190        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -442,7 +447,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AE9      ; 165        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE10     ; 169        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE11     ; 174        ; 8        ; AffUnite[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; AE12     ; 182        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE12     ; 182        ; 8        ; leds[0]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE13     ; 183        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE14     ; 188        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AE15     ; 189        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -452,7 +457,7 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; AE19     ; 214        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE22     ; 236        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE22     ; 236        ; 7        ; data_valid                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE23     ; 244        ; 7        ; data_anemometre[0]                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE24     ; 247        ; 6        ; ~LVDS150p/nCEO~                          ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE25     ; 246        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -791,8 +796,8 @@ The pin-out file can be found in C:/Users/Etudiant/Documents/SALAZAR_SANOGO_BINO
 ; N22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; N23      ; 311        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N24      ; 310        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N25      ; 309        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N26      ; 308        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N25      ; 309        ; 5        ; continu                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; N26      ; 308        ; 5        ; start_stop                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P1       ; 68         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P2       ; 67         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P3       ; 69         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1021,28 +1026,28 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |PiloteBarreFranche                       ; 1198 (0)    ; 124 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 33   ; 0            ; 1074 (0)     ; 0 (0)             ; 124 (0)          ; |PiloteBarreFranche                                                                                                                            ; work         ;
-;    |gestion_anemo:vitesse_vent|           ; 1198 (299)  ; 124 (124)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1074 (175)   ; 0 (0)             ; 124 (109)        ; |PiloteBarreFranche|gestion_anemo:vitesse_vent                                                                                                 ; work         ;
-;       |lpm_divide:Div0|                   ; 19 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0                                                                                 ; work         ;
-;          |lpm_divide_4dm:auto_generated|  ; 19 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_4dm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_ekh:divider| ; 19 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
-;                |alt_u_div_uve:divider|    ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider ; work         ;
-;       |lpm_divide:Div1|                   ; 60 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1                                                                                 ; work         ;
-;          |lpm_divide_1dm:auto_generated|  ; 60 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_1dm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_bkh:divider| ; 60 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
-;                |alt_u_div_ove:divider|    ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (60)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider ; work         ;
-;       |lpm_divide:Div2|                   ; 714 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 714 (0)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2                                                                                 ; work         ;
-;          |lpm_divide_5gm:auto_generated|  ; 714 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 714 (0)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_fnh:divider| ; 714 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 714 (0)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider                       ; work         ;
-;                |alt_u_div_06f:divider|    ; 714 (714)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 714 (714)    ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider ; work         ;
+; |PiloteBarreFranche                       ; 1226 (0)    ; 159 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 38   ; 0            ; 1067 (0)     ; 0 (0)             ; 159 (0)          ; |PiloteBarreFranche                                                                                                                            ; work         ;
+;    |gestion_anemo:vitesse_vent|           ; 1226 (343)  ; 159 (159)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1067 (184)   ; 0 (0)             ; 159 (119)        ; |PiloteBarreFranche|gestion_anemo:vitesse_vent                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 732 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 707 (0)      ; 0 (0)             ; 25 (0)           ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_5gm:auto_generated|  ; 732 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 707 (0)      ; 0 (0)             ; 25 (0)           ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_fnh:divider| ; 732 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 707 (0)      ; 0 (0)             ; 25 (0)           ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider                       ; work         ;
+;                |alt_u_div_06f:divider|    ; 732 (732)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 707 (707)    ; 0 (0)             ; 25 (25)          ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider ; work         ;
+;       |lpm_divide:Div1|                   ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1                                                                                 ; work         ;
+;          |lpm_divide_4dm:auto_generated|  ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_4dm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_ekh:divider| ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
+;                |alt_u_div_uve:divider|    ; 18 (18)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider ; work         ;
+;       |lpm_divide:Div2|                   ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2                                                                                 ; work         ;
+;          |lpm_divide_1dm:auto_generated|  ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
+;                |alt_u_div_ove:divider|    ; 56 (56)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (56)      ; 0 (0)             ; 0 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider ; work         ;
 ;       |lpm_divide:Mod0|                   ; 36 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 8 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod0                                                                                 ; work         ;
 ;          |lpm_divide_85m:auto_generated|  ; 36 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 8 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_fkh:divider| ; 36 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 8 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider                       ; work         ;
 ;                |alt_u_div_00f:divider|    ; 36 (36)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (28)      ; 0 (0)             ; 8 (8)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider ; work         ;
-;       |lpm_divide:Mod1|                   ; 85 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1                                                                                 ; work         ;
-;          |lpm_divide_85m:auto_generated|  ; 85 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_fkh:divider| ; 85 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider                       ; work         ;
-;                |alt_u_div_00f:divider|    ; 85 (85)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 78 (78)      ; 0 (0)             ; 7 (7)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider ; work         ;
+;       |lpm_divide:Mod1|                   ; 81 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 74 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1                                                                                 ; work         ;
+;          |lpm_divide_85m:auto_generated|  ; 81 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 74 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_fkh:divider| ; 81 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 74 (0)       ; 0 (0)             ; 7 (0)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider                       ; work         ;
+;                |alt_u_div_00f:divider|    ; 81 (81)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 74 (74)      ; 0 (0)             ; 7 (7)            ; |PiloteBarreFranche|gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1083,8 +1088,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AffUnite[1]        ; Output   ; --            ; --            ; --                    ; --  ;
 ; AffUnite[0]        ; Output   ; --            ; --            ; --                    ; --  ;
 ; clk_1Hz            ; Output   ; --            ; --            ; --                    ; --  ;
-; in_freq_anemometre ; Input    ; 0             ; 0             ; --                    ; --  ;
+; leds[0]            ; Output   ; --            ; --            ; --                    ; --  ;
+; leds[1]            ; Output   ; --            ; --            ; --                    ; --  ;
+; data_valid         ; Output   ; --            ; --            ; --                    ; --  ;
+; continu            ; Input    ; 0             ; 0             ; --                    ; --  ;
+; start_stop         ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; clk_50M            ; Input    ; 0             ; 0             ; --                    ; --  ;
+; in_freq_anemometre ; Input    ; 0             ; 0             ; --                    ; --  ;
 +--------------------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1094,20 +1104,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                    ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------+-------------------+---------+
 ; raz_n                                                  ;                   ;         ;
+; continu                                                ;                   ;         ;
+; start_stop                                             ;                   ;         ;
+; clk_50M                                                ;                   ;         ;
 ; in_freq_anemometre                                     ;                   ;         ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[25]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[24]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[23]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[22]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[21]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[20]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[19]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[18]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[17]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[16]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[15]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[14]   ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_calcule[13]   ; 0                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[25]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[24]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[23]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[22]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[21]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[20]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[19]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[18]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[17]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[16]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[15]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[14]   ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_calcule[13]   ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[12]   ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[11]   ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[10]   ; 1                 ; 0       ;
@@ -1121,19 +1134,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[2]    ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[1]    ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_calcule[0]    ; 1                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[25] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[24] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[23] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[22] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[21] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[20] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[19] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[18] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[17] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[16] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[15] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[14] ; 0                 ; 0       ;
-;      - gestion_anemo:vitesse_vent|valeur_precedent[13] ; 0                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[25] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[24] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[23] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[22] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[21] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[20] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[19] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[18] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[17] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[16] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[15] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[14] ; 1                 ; 0       ;
+;      - gestion_anemo:vitesse_vent|valeur_precedent[13] ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[12] ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[11] ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[10] ; 1                 ; 0       ;
@@ -1147,20 +1160,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[2]  ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[1]  ; 1                 ; 0       ;
 ;      - gestion_anemo:vitesse_vent|valeur_precedent[0]  ; 1                 ; 0       ;
-; clk_50M                                                ;                   ;         ;
 +--------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                               ;
-+--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                             ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk_50M                                          ; PIN_N2             ; 72      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; gestion_anemo:vitesse_vent|Equal1~8              ; LCCOMB_X37_Y16_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; gestion_anemo:vitesse_vent|valeur_calcule[19]~84 ; LCCOMB_X60_Y28_N26 ; 26      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; in_freq_anemometre                               ; PIN_J22            ; 52      ; Clock        ; no     ; --                   ; --               ; --                        ;
-+--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                ;
++----------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                               ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk_50M                                            ; PIN_N2            ; 107     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; gestion_anemo:vitesse_vent|s_data_anemometre[0]~25 ; LCCOMB_X37_Y8_N14 ; 52      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; gestion_anemo:vitesse_vent|valeur_calcule[2]~84    ; LCCOMB_X47_Y20_N0 ; 26      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; in_freq_anemometre                                 ; PIN_J22           ; 52      ; Clock        ; no     ; --                   ; --               ; --                        ;
++----------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -1168,7 +1180,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+---------+----------------------+------------------+---------------------------+
 ; Name    ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------+----------+---------+----------------------+------------------+---------------------------+
-; clk_50M ; PIN_N2   ; 72      ; Global Clock         ; GCLK2            ; --                        ;
+; clk_50M ; PIN_N2   ; 107     ; Global Clock         ; GCLK2            ; --                        ;
 +---------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1179,54 +1191,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; gestion_anemo:vitesse_vent|LessThan0~50                                                                                                                 ; 53      ;
 ; in_freq_anemometre                                                                                                                                      ; 52      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[25]                                                                                                           ; 40      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[567]                     ; 39      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[0]                                                                                                            ; 37      ;
-; gestion_anemo:vitesse_vent|Equal1~8                                                                                                                     ; 32      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_15~48                     ; 31      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_16~50                     ; 30      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_14~46                     ; 30      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[594]                     ; 29      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[486]                     ; 29      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_13~44                     ; 29      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_12~42                     ; 28      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_10~40                     ; 27      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[19]~84                                                                                                        ; 26      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[621]                     ; 26      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[513]                     ; 26      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|add_sub_18_result_int[19]~36 ; 26      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[3]                                                                                                            ; 26      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[1]                                                                                                            ; 25      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[2]                                                                                                            ; 25      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[6]                                                                                                            ; 24      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[540]                     ; 23      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[5]                                                                                                            ; 23      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[4]                                                                                                            ; 23      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[9]                                                                                                            ; 21      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[405]~705             ; 20      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[8]                                                                                                            ; 20      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[7]                                                                                                            ; 20      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_5_result_int[6]~10   ; 18      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_8~36                      ; 18      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[12]                                                                                                           ; 18      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[459]~717             ; 17      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[432]~716             ; 17      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[245]~0                   ; 17      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_7~34                      ; 17      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[11]                                                                                                           ; 17      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[10]                                                                                                           ; 17      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_6~32                      ; 16      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_4_result_int[5]~8    ; 15      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_5~30                      ; 15      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[15]                                                                                                           ; 15      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[21]                                                                                                           ; 15      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[378]~715             ; 14      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[351]~714             ; 14      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[243]~706             ; 14      ;
+; gestion_anemo:vitesse_vent|s_data_anemometre[0]~25                                                                                                      ; 52      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[0]                                                                                                            ; 38      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[25]                                                                                                           ; 34      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[567]~734             ; 30      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[3]                                                                                                            ; 29      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_16~50                     ; 27      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[2]                                                                                                            ; 27      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[2]~84                                                                                                         ; 26      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_15~48                     ; 26      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[6]                                                                                                            ; 26      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[1]                                                                                                            ; 26      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[621]~751             ; 25      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[486]~746             ; 25      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_14~46                     ; 25      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[5]                                                                                                            ; 25      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[594]~750             ; 24      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_13~44                     ; 24      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[4]                                                                                                            ; 24      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_12~42                     ; 23      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[9]                                                                                                            ; 23      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[540]~749             ; 22      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[405]~736             ; 22      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_10~40                     ; 22      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[8]                                                                                                            ; 22      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[513]~748             ; 21      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|add_sub_18_result_int[19]~36 ; 21      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[7]                                                                                                            ; 21      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[12]                                                                                                           ; 20      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[324]~737             ; 19      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_8~36                      ; 19      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[11]                                                                                                           ; 19      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|sel[17]                      ; 18      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_7~34                      ; 18      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[10]                                                                                                           ; 18      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[432]~747             ; 17      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_5_result_int[6]~10   ; 17      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_6~32                      ; 17      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[15]                                                                                                           ; 17      ;
+; gestion_anemo:vitesse_vent|Equal1~8                                                                                                                     ; 16      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[243]~738             ; 16      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|op_5~30                      ; 16      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[14]                                                                                                           ; 16      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[378]~745             ; 15      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|add_sub_13_result_int[14]~26 ; 15      ;
+; gestion_anemo:vitesse_vent|valeur_calcule[13]                                                                                                           ; 15      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Div0|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|selnose[351]~744             ; 14      ;
 ; gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_6_result_int[7]~12   ; 14      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_6_result_int[7]~12   ; 14      ;
-; gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_5gm:auto_generated|sign_div_unsign_fnh:divider|alt_u_div_06f:divider|add_sub_13_result_int[14]~26 ; 14      ;
-; gestion_anemo:vitesse_vent|valeur_calcule[14]                                                                                                           ; 14      ;
+; gestion_anemo:vitesse_vent|lpm_divide:Mod1|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_4_result_int[5]~8    ; 14      ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1235,151 +1247,151 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 1,728 / 94,460 ( 2 % ) ;
-; C16 interconnects          ; 14 / 3,315 ( < 1 % )   ;
-; C4 interconnects           ; 860 / 60,840 ( 1 % )   ;
-; Direct links               ; 352 / 94,460 ( < 1 % ) ;
+; Block interconnects        ; 1,781 / 94,460 ( 2 % ) ;
+; C16 interconnects          ; 8 / 3,315 ( < 1 % )    ;
+; C4 interconnects           ; 937 / 60,840 ( 2 % )   ;
+; Direct links               ; 321 / 94,460 ( < 1 % ) ;
 ; Global clocks              ; 1 / 16 ( 6 % )         ;
-; Local interconnects        ; 383 / 33,216 ( 1 % )   ;
-; R24 interconnects          ; 17 / 3,091 ( < 1 % )   ;
-; R4 interconnects           ; 923 / 81,294 ( 1 % )   ;
+; Local interconnects        ; 388 / 33,216 ( 1 % )   ;
+; R24 interconnects          ; 13 / 3,091 ( < 1 % )   ;
+; R4 interconnects           ; 968 / 81,294 ( 1 % )   ;
 +----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.16) ; Number of LABs  (Total = 91) ;
+; Number of Logic Elements  (Average = 13.93) ; Number of LABs  (Total = 88) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 8                            ;
+; 1                                           ; 4                            ;
 ; 2                                           ; 3                            ;
-; 3                                           ; 2                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 2                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 1                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 1                            ;
-; 11                                          ; 1                            ;
+; 10                                          ; 3                            ;
+; 11                                          ; 0                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
+; 13                                          ; 1                            ;
 ; 14                                          ; 3                            ;
-; 15                                          ; 1                            ;
-; 16                                          ; 66                           ;
+; 15                                          ; 4                            ;
+; 16                                          ; 65                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.26) ; Number of LABs  (Total = 91) ;
+; LAB-wide Signals  (Average = 0.61) ; Number of LABs  (Total = 88) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 17                           ;
-; 1 Clock enable                     ; 7                            ;
+; 1 Clock                            ; 32                           ;
+; 1 Clock enable                     ; 22                           ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.42) ; Number of LABs  (Total = 91) ;
+; Number of Signals Sourced  (Average = 14.59) ; Number of LABs  (Total = 88) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 7                            ;
-; 2                                            ; 4                            ;
-; 3                                            ; 5                            ;
-; 4                                            ; 2                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 3                            ;
+; 3                                            ; 3                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 1                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 2                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 1                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 2                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 4                            ;
-; 15                                           ; 15                           ;
-; 16                                           ; 33                           ;
-; 17                                           ; 1                            ;
-; 18                                           ; 3                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 3                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 14                           ;
+; 16                                           ; 24                           ;
+; 17                                           ; 9                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 2                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 3                            ;
 ; 27                                           ; 1                            ;
 ; 28                                           ; 0                            ;
-; 29                                           ; 2                            ;
+; 29                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                        ;
-+-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 9.57) ; Number of LABs  (Total = 91) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 1                            ;
-; 1                                               ; 9                            ;
-; 2                                               ; 4                            ;
-; 3                                               ; 4                            ;
-; 4                                               ; 3                            ;
-; 5                                               ; 1                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 5                            ;
-; 8                                               ; 4                            ;
-; 9                                               ; 4                            ;
-; 10                                              ; 8                            ;
-; 11                                              ; 7                            ;
-; 12                                              ; 7                            ;
-; 13                                              ; 5                            ;
-; 14                                              ; 12                           ;
-; 15                                              ; 5                            ;
-; 16                                              ; 9                            ;
-; 17                                              ; 1                            ;
-+-------------------------------------------------+------------------------------+
++---------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                         ;
++--------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 10.11) ; Number of LABs  (Total = 88) ;
++--------------------------------------------------+------------------------------+
+; 0                                                ; 1                            ;
+; 1                                                ; 5                            ;
+; 2                                                ; 3                            ;
+; 3                                                ; 1                            ;
+; 4                                                ; 4                            ;
+; 5                                                ; 3                            ;
+; 6                                                ; 1                            ;
+; 7                                                ; 6                            ;
+; 8                                                ; 4                            ;
+; 9                                                ; 6                            ;
+; 10                                               ; 6                            ;
+; 11                                               ; 7                            ;
+; 12                                               ; 8                            ;
+; 13                                               ; 8                            ;
+; 14                                               ; 10                           ;
+; 15                                               ; 7                            ;
+; 16                                               ; 7                            ;
+; 17                                               ; 1                            ;
++--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 17.75) ; Number of LABs  (Total = 91) ;
+; Number of Distinct Inputs  (Average = 19.18) ; Number of LABs  (Total = 88) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
-; 2                                            ; 5                            ;
-; 3                                            ; 4                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 4                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 1                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 7                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 3                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 4                            ;
+; 9                                            ; 0                            ;
 ; 10                                           ; 1                            ;
-; 11                                           ; 5                            ;
-; 12                                           ; 2                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 2                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 4                            ;
-; 18                                           ; 5                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 5                            ;
-; 21                                           ; 4                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 5                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 3                            ;
+; 15                                           ; 3                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 5                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 5                            ;
+; 20                                           ; 2                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 7                            ;
+; 23                                           ; 2                            ;
 ; 24                                           ; 2                            ;
-; 25                                           ; 3                            ;
-; 26                                           ; 3                            ;
-; 27                                           ; 4                            ;
-; 28                                           ; 4                            ;
-; 29                                           ; 4                            ;
-; 30                                           ; 8                            ;
+; 25                                           ; 5                            ;
+; 26                                           ; 4                            ;
+; 27                                           ; 5                            ;
+; 28                                           ; 3                            ;
+; 29                                           ; 5                            ;
+; 30                                           ; 9                            ;
 ; 31                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
@@ -1426,7 +1438,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Sep 25 11:56:21 2020
+    Info: Processing started: Tue Sep 29 11:21:54 2020
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off PiloteBarreFranche -c PiloteBarreFranche
 Info: Selected device EP2C35F672C6 for design "PiloteBarreFranche"
 Info: Low junction temperature is 0 degrees C
@@ -1440,7 +1452,7 @@ Info: Fitter converted 3 user pins into dedicated programming pins
     Info: Pin ~ASDO~ is reserved at location E3
     Info: Pin ~nCSO~ is reserved at location D3
     Info: Pin ~LVDS150p/nCEO~ is reserved at location AE24
-Warning: No exact pin location assignment(s) for 2 pins of 33 total pins
+Warning: No exact pin location assignment(s) for 2 pins of 38 total pins
     Info: Pin raz_n not assigned to an exact location on the device
     Info: Pin clk_1Hz not assigned to an exact location on the device
 Info: Fitter is using the Classic Timing Analyzer
@@ -1465,80 +1477,62 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 3 total pin(s) used --  56 pins available
         Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
         Info: I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
-        Info: I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  64 pins available
+        Info: I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 3 total pin(s) used --  62 pins available
         Info: I/O bank number 6 does not use VREF pins and has 3.3V VCCIO pins. 15 total pin(s) used --  44 pins available
-        Info: I/O bank number 7 does not use VREF pins and has 3.3V VCCIO pins. 8 total pin(s) used --  50 pins available
-        Info: I/O bank number 8 does not use VREF pins and has 3.3V VCCIO pins. 7 total pin(s) used --  49 pins available
+        Info: I/O bank number 7 does not use VREF pins and has 3.3V VCCIO pins. 9 total pin(s) used --  49 pins available
+        Info: I/O bank number 8 does not use VREF pins and has 3.3V VCCIO pins. 9 total pin(s) used --  47 pins available
 Warning: Ignored locations or region assignments to the following nodes
     Warning: Node "clk_200Hz" is assigned to location or region, but does not exist in design
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:01
-Info: Estimated most critical path is register to register delay of 7.345 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X59_Y30; Fanout = 3; REG Node = 'gestion_anemo:vitesse_vent|valeur_precedent[0]'
-    Info: 2: + IC(0.455 ns) + CELL(0.414 ns) = 0.869 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~1'
-    Info: 3: + IC(0.000 ns) + CELL(0.071 ns) = 0.940 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~3'
-    Info: 4: + IC(0.000 ns) + CELL(0.071 ns) = 1.011 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~5'
-    Info: 5: + IC(0.000 ns) + CELL(0.071 ns) = 1.082 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~7'
-    Info: 6: + IC(0.000 ns) + CELL(0.071 ns) = 1.153 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~9'
-    Info: 7: + IC(0.000 ns) + CELL(0.071 ns) = 1.224 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~11'
-    Info: 8: + IC(0.000 ns) + CELL(0.071 ns) = 1.295 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~13'
-    Info: 9: + IC(0.000 ns) + CELL(0.071 ns) = 1.366 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~15'
-    Info: 10: + IC(0.000 ns) + CELL(0.071 ns) = 1.437 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~17'
-    Info: 11: + IC(0.000 ns) + CELL(0.071 ns) = 1.508 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~19'
-    Info: 12: + IC(0.000 ns) + CELL(0.071 ns) = 1.579 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~21'
-    Info: 13: + IC(0.000 ns) + CELL(0.071 ns) = 1.650 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~23'
-    Info: 14: + IC(0.000 ns) + CELL(0.071 ns) = 1.721 ns; Loc. = LAB_X59_Y30; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~25'
-    Info: 15: + IC(0.090 ns) + CELL(0.071 ns) = 1.882 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~27'
-    Info: 16: + IC(0.000 ns) + CELL(0.071 ns) = 1.953 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~29'
-    Info: 17: + IC(0.000 ns) + CELL(0.071 ns) = 2.024 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~31'
-    Info: 18: + IC(0.000 ns) + CELL(0.071 ns) = 2.095 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~33'
-    Info: 19: + IC(0.000 ns) + CELL(0.071 ns) = 2.166 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~35'
-    Info: 20: + IC(0.000 ns) + CELL(0.071 ns) = 2.237 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~37'
-    Info: 21: + IC(0.000 ns) + CELL(0.071 ns) = 2.308 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~39'
-    Info: 22: + IC(0.000 ns) + CELL(0.071 ns) = 2.379 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~41'
-    Info: 23: + IC(0.000 ns) + CELL(0.071 ns) = 2.450 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~43'
-    Info: 24: + IC(0.000 ns) + CELL(0.071 ns) = 2.521 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~45'
-    Info: 25: + IC(0.000 ns) + CELL(0.071 ns) = 2.592 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~47'
-    Info: 26: + IC(0.000 ns) + CELL(0.071 ns) = 2.663 ns; Loc. = LAB_X59_Y29; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~49'
-    Info: 27: + IC(0.000 ns) + CELL(0.410 ns) = 3.073 ns; Loc. = LAB_X59_Y29; Fanout = 53; COMB Node = 'gestion_anemo:vitesse_vent|LessThan0~50'
-    Info: 28: + IC(0.902 ns) + CELL(0.150 ns) = 4.125 ns; Loc. = LAB_X58_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|Add2~29'
-    Info: 29: + IC(0.873 ns) + CELL(0.414 ns) = 5.412 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[5]~90'
-    Info: 30: + IC(0.000 ns) + CELL(0.071 ns) = 5.483 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[6]~92'
-    Info: 31: + IC(0.000 ns) + CELL(0.071 ns) = 5.554 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[7]~94'
-    Info: 32: + IC(0.000 ns) + CELL(0.071 ns) = 5.625 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[8]~96'
-    Info: 33: + IC(0.000 ns) + CELL(0.071 ns) = 5.696 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[9]~98'
-    Info: 34: + IC(0.000 ns) + CELL(0.071 ns) = 5.767 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[10]~100'
-    Info: 35: + IC(0.000 ns) + CELL(0.071 ns) = 5.838 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[11]~102'
-    Info: 36: + IC(0.000 ns) + CELL(0.071 ns) = 5.909 ns; Loc. = LAB_X59_Y28; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[12]~104'
-    Info: 37: + IC(0.090 ns) + CELL(0.071 ns) = 6.070 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[13]~106'
-    Info: 38: + IC(0.000 ns) + CELL(0.071 ns) = 6.141 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[14]~108'
-    Info: 39: + IC(0.000 ns) + CELL(0.071 ns) = 6.212 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[15]~110'
-    Info: 40: + IC(0.000 ns) + CELL(0.071 ns) = 6.283 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[16]~112'
-    Info: 41: + IC(0.000 ns) + CELL(0.071 ns) = 6.354 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[17]~114'
-    Info: 42: + IC(0.000 ns) + CELL(0.071 ns) = 6.425 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[18]~116'
-    Info: 43: + IC(0.000 ns) + CELL(0.071 ns) = 6.496 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[19]~118'
-    Info: 44: + IC(0.000 ns) + CELL(0.071 ns) = 6.567 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[20]~120'
-    Info: 45: + IC(0.000 ns) + CELL(0.071 ns) = 6.638 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[21]~122'
-    Info: 46: + IC(0.000 ns) + CELL(0.071 ns) = 6.709 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[22]~124'
-    Info: 47: + IC(0.000 ns) + CELL(0.071 ns) = 6.780 ns; Loc. = LAB_X59_Y27; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[23]~126'
-    Info: 48: + IC(0.000 ns) + CELL(0.071 ns) = 6.851 ns; Loc. = LAB_X59_Y27; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[24]~128'
-    Info: 49: + IC(0.000 ns) + CELL(0.410 ns) = 7.261 ns; Loc. = LAB_X59_Y27; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|valeur_calcule[25]~129'
-    Info: 50: + IC(0.000 ns) + CELL(0.084 ns) = 7.345 ns; Loc. = LAB_X59_Y27; Fanout = 40; REG Node = 'gestion_anemo:vitesse_vent|valeur_calcule[25]'
-    Info: Total cell delay = 4.935 ns ( 67.19 % )
-    Info: Total interconnect delay = 2.410 ns ( 32.81 % )
+Info: Estimated most critical path is register to register delay of 13.065 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X55_Y6; Fanout = 12; REG Node = 'gestion_anemo:vitesse_vent|s_data_anemometre[5]'
+    Info: 2: + IC(0.646 ns) + CELL(0.414 ns) = 1.060 ns; Loc. = LAB_X56_Y6; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[1]~1'
+    Info: 3: + IC(0.000 ns) + CELL(0.071 ns) = 1.131 ns; Loc. = LAB_X56_Y6; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[2]~3'
+    Info: 4: + IC(0.000 ns) + CELL(0.071 ns) = 1.202 ns; Loc. = LAB_X56_Y6; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[3]~5'
+    Info: 5: + IC(0.000 ns) + CELL(0.410 ns) = 1.612 ns; Loc. = LAB_X56_Y6; Fanout = 13; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[4]~6'
+    Info: 6: + IC(0.336 ns) + CELL(0.420 ns) = 2.368 ns; Loc. = LAB_X57_Y6; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[18]~41'
+    Info: 7: + IC(0.588 ns) + CELL(0.414 ns) = 3.370 ns; Loc. = LAB_X56_Y6; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[4]~7'
+    Info: 8: + IC(0.000 ns) + CELL(0.410 ns) = 3.780 ns; Loc. = LAB_X56_Y6; Fanout = 13; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[5]~8'
+    Info: 9: + IC(0.637 ns) + CELL(0.420 ns) = 4.837 ns; Loc. = LAB_X55_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[20]~34'
+    Info: 10: + IC(0.397 ns) + CELL(0.414 ns) = 5.648 ns; Loc. = LAB_X55_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[1]~1'
+    Info: 11: + IC(0.000 ns) + CELL(0.071 ns) = 5.719 ns; Loc. = LAB_X55_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[2]~3'
+    Info: 12: + IC(0.000 ns) + CELL(0.071 ns) = 5.790 ns; Loc. = LAB_X55_Y9; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[3]~5'
+    Info: 13: + IC(0.000 ns) + CELL(0.071 ns) = 5.861 ns; Loc. = LAB_X55_Y9; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[4]~7'
+    Info: 14: + IC(0.000 ns) + CELL(0.410 ns) = 6.271 ns; Loc. = LAB_X55_Y9; Fanout = 13; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[5]~8'
+    Info: 15: + IC(0.336 ns) + CELL(0.420 ns) = 7.027 ns; Loc. = LAB_X54_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[25]~24'
+    Info: 16: + IC(0.397 ns) + CELL(0.414 ns) = 7.838 ns; Loc. = LAB_X54_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[1]~1'
+    Info: 17: + IC(0.000 ns) + CELL(0.071 ns) = 7.909 ns; Loc. = LAB_X54_Y9; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[2]~3'
+    Info: 18: + IC(0.000 ns) + CELL(0.071 ns) = 7.980 ns; Loc. = LAB_X54_Y9; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[3]~5'
+    Info: 19: + IC(0.000 ns) + CELL(0.071 ns) = 8.051 ns; Loc. = LAB_X54_Y9; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[4]~7'
+    Info: 20: + IC(0.000 ns) + CELL(0.410 ns) = 8.461 ns; Loc. = LAB_X54_Y9; Fanout = 10; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Div2|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[5]~8'
+    Info: 21: + IC(0.887 ns) + CELL(0.398 ns) = 9.746 ns; Loc. = LAB_X57_Y7; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_6_result_int[0]~14'
+    Info: 22: + IC(0.127 ns) + CELL(0.438 ns) = 10.311 ns; Loc. = LAB_X57_Y7; Fanout = 3; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|StageOut[48]~31'
+    Info: 23: + IC(0.415 ns) + CELL(0.393 ns) = 11.119 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[1]~1'
+    Info: 24: + IC(0.000 ns) + CELL(0.071 ns) = 11.190 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[2]~3'
+    Info: 25: + IC(0.000 ns) + CELL(0.071 ns) = 11.261 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[3]~5'
+    Info: 26: + IC(0.000 ns) + CELL(0.071 ns) = 11.332 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[4]~7'
+    Info: 27: + IC(0.000 ns) + CELL(0.071 ns) = 11.403 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[5]~9'
+    Info: 28: + IC(0.000 ns) + CELL(0.071 ns) = 11.474 ns; Loc. = LAB_X57_Y7; Fanout = 2; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[6]~11'
+    Info: 29: + IC(0.000 ns) + CELL(0.071 ns) = 11.545 ns; Loc. = LAB_X57_Y7; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[7]~13'
+    Info: 30: + IC(0.000 ns) + CELL(0.410 ns) = 11.955 ns; Loc. = LAB_X57_Y7; Fanout = 8; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|add_sub_7_result_int[8]~14'
+    Info: 31: + IC(0.751 ns) + CELL(0.275 ns) = 12.981 ns; Loc. = LAB_X55_Y7; Fanout = 1; COMB Node = 'gestion_anemo:vitesse_vent|lpm_divide:Mod0|lpm_divide_85m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_00f:divider|StageOut[56]~138'
+    Info: 32: + IC(0.000 ns) + CELL(0.084 ns) = 13.065 ns; Loc. = LAB_X55_Y7; Fanout = 7; REG Node = 'gestion_anemo:vitesse_vent|dizaine[0]'
+    Info: Total cell delay = 7.548 ns ( 57.77 % )
+    Info: Total interconnect delay = 5.517 ns ( 42.23 % )
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 1% of the available device resources
-    Info: Peak interconnect usage is 4% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
+    Info: Peak interconnect usage is 11% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
 Info: Started post-fitting delay annotation
-Warning: Found 30 output pins without output pin load capacitance assignment
+Warning: Found 33 output pins without output pin load capacitance assignment
     Info: Pin "data_anemometre[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "data_anemometre[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "data_anemometre[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1569,14 +1563,17 @@ Warning: Found 30 output pins without output pin load capacitance assignment
     Info: Pin "AffUnite[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "AffUnite[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "clk_1Hz" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "leds[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "leds[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "data_valid" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
 Warning: Following 1 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
     Info: Pin AffCentaine[1] has GND driving its datain port
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 275 megabytes
-    Info: Processing ended: Fri Sep 25 11:56:26 2020
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Tue Sep 29 11:21:58 2020
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

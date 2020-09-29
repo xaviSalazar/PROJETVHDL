@@ -16,10 +16,9 @@ start_stop			: in std_logic; -- start/stop
 --sorties
 data_valid			: out std_logic; -- validation donnee
 data_anemometre		: out std_logic_vector (7 downto 0); -- valeur anemo
-
 AffCentaine, AffDizane, AffUnite 		 : out  STD_LOGIC_VECTOR(0 to 6);
-clk_1Hz           : in std_logic
-
+clk_1Hz           : out std_logic;
+leds : out std_logic_vector(1 downto 0)
 );
 
 end gestion_anemo;
@@ -36,10 +35,18 @@ signal valeur_calcule : std_logic_vector (25 downto 0);
 signal centaine, dizaine, unite : std_logic_vector (7 downto 0):=(others => '0');
 
 signal s_data_anemometre		: std_logic_vector (7 downto 0) ;
+signal s_data_anemo		: std_logic_vector (25 downto 0) ; --juste pour la validation (stabilité de data_valid)
 
 SIGNAL  count_1Hz      :     unsigned (26 downto 0);
 
 signal s_clk_1Hz           :     std_logic;
+
+type mode is (Monocoup, Multicoup);
+signal  mode_anemometre: mode:=Monocoup;
+
+signal s_leds : std_logic_vector(1 downto 0);
+
+signal s_data_valid : std_logic;
 
 BEGIN
 -- process pour comptage avec horloge de 50M
@@ -58,48 +65,89 @@ begin
 	end if;
 end process;
 
-
-div_clk : PROCESS(clk_50M)
-begin
-if rising_edge(clk_50M) then
-if count_1Hz = X"2FAF080" then
-s_clk_1Hz<= not s_clk_1Hz;
-count_1Hz <= (others => '0');
-else
-count_1Hz <= count_1Hz + "1";
-end IF;
-end IF;
-end PROCESS div_clk;
-
-clk_1Hz<=s_clk_1Hz;
-
---deuxieme process
-process (in_freq_anemometre, clk_1Hz)
+--process calcul du nombre de fronts montants du clk_50M dans une periode du signal de l'anemomètre
+process (in_freq_anemometre)
 begin 
 
 	if rising_edge(in_freq_anemometre) then 
         debut_periode <= '1';
-		if rising_edge(clk_1Hz) then
 		if (valeur_precedent < valeur_present) then
 		valeur_calcule <= valeur_present - valeur_precedent;
 		elsif (valeur_precedent > valeur_present ) then
         valeur_calcule <= valeur_precedent - valeur_present;
         end if;
         valeur_precedent <= valeur_present;
-        
-        end if;
-    
-
      end if;
+     
 end process;
 
-s_data_anemometre <=  std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,8 ) );
+--process changement de mode
+choix_mode : process (continu, start_stop)
+begin 
+	if (continu='1') then 
+          mode_anemometre <= Multicoup;
+          s_leds(0) <= '1';
+          s_data_valid <= '1';
+    else
+     if(continu='0') then
+           mode_anemometre <= Monocoup;
+           s_leds(0) <= '0';
+           if(start_stop='0') then
+              s_data_valid <= '0';
+           else
+             s_data_valid <= '1';
+           end if;
+     end if;
+     end if;   
+end process;
+leds(0) <= s_leds(0);
+
+--process clock_1Hz
+div_clk : PROCESS(clk_50M)
+begin
+if rising_edge(clk_50M) then
+if count_1Hz = X"2FAF080" then
+  s_clk_1Hz<= not s_clk_1Hz;
+  count_1Hz <= (others => '0');
+ case mode_anemometre is
+   when Multicoup =>
+      s_data_anemometre <=  std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,8 ) );
+      --s_data_anemo <= std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,26 ) );
+      	if (s_data_anemometre < X"00" or s_data_anemometre > X"FA") then
+           s_data_anemometre <= X"00";
+       end if;
+      centaine <= std_logic_vector(to_unsigned(to_integer( unsigned(s_data_anemometre) / 100), 8));
+      dizaine  <= std_logic_vector(to_unsigned(to_integer( unsigned (s_data_anemometre) /10  mod 10), 8));
+      unite    <= std_logic_vector(to_unsigned(to_integer(unsigned (s_data_anemometre) mod 10 ), 8)) ;
+           
+   when Monocoup =>
+       if(start_stop='1') then
+         s_leds(1) <= '1';
+         s_data_anemometre <=  std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,8 ) );
+         --s_data_anemo <= std_logic_vector(to_unsigned( to_integer( 50000000 / unsigned (valeur_calcule)) ,26 ) );
+      	  if (s_data_anemometre < X"00" or s_data_anemometre > X"FA") then
+            s_data_anemometre <= X"00";
+          end if;
+         centaine <= std_logic_vector(to_unsigned(to_integer( unsigned(s_data_anemometre) / 100), 8));
+         dizaine  <= std_logic_vector(to_unsigned(to_integer( unsigned (s_data_anemometre) /10  mod 10), 8));
+         unite    <= std_logic_vector(to_unsigned(to_integer(unsigned (s_data_anemometre) mod 10 ), 8)) ;
+         else 
+            if(start_stop='0') then 
+            s_leds(1) <= '0';
+            end if;
+       end if;
+ end case;
+ 
+else
+count_1Hz <= count_1Hz + "1";
+end IF;
+end IF;
+end PROCESS div_clk;
+leds(1) <= s_leds(1);
+clk_1Hz<=s_clk_1Hz;
+
+data_valid <= s_data_valid;
 data_anemometre <= s_data_anemometre;
-
-centaine <= std_logic_vector(to_unsigned(to_integer( unsigned(s_data_anemometre) / 100), 8));
-dizaine  <= std_logic_vector(to_unsigned(to_integer( unsigned (s_data_anemometre) /10  mod 10), 8));
-unite    <= std_logic_vector(to_unsigned(to_integer(unsigned (s_data_anemometre) mod 10 ), 8)) ;
-
 
 AffCentaine <=  "0000001" when centaine =X"00"   else
                 "1001111" when centaine =X"01"   else
